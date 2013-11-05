@@ -45,11 +45,6 @@
 		$(function(){
 			$('.bx-slider').bxSlider({
 				auto: true,
-				minSlides: 3,
-				maxSlides: 3,
-				moveSlides: 1,
-				slideWidth: 235,
-				slideMargin: 10,
 				pager	:	false
 			});
 			if($(window).width() > 1200){
@@ -215,14 +210,17 @@
                     <div class="col-sm-8" id="contents">
                         <h2>Fail Compilation Week 1and</h2>
                         <p>Posted in: <a href="#">Funny Videos</a> | Duration : 05:29 mins</p>
-                        <p class="video-controls-bar text-right"><a href="#" class="inactive"><span class="icon-caret-left"></span> Previous video</a> | <a href="#">Next video <span class="icon-caret-right"></span></a></p>
-                        <div class="like-bar clearfix icons-thumbs">
+                        <p class="video-controls-bar text-right clearfix">
+                        	<span class="pull-right"><a href="#" class="inactive"><i class="icon-caret-left"></i> Previous video</a> | 
+                            <a href="#">Next video <i class="icon-caret-right active"></i></a></span>
+                            </p>
+                        <div class="clearfix icons-thumbs">
                             <div class="row">
 	                            <div class="col-sm-6">
                                 	<a href="#" class="icon-thumbs-down"></a>
                                     <a href="#" class="icon-thumbs-up"></a>
                                     <a href="#" class="icon-time"></a>
-                                    <a href="#" class="icon-comments"><span><img src="images/comment-left.png" alt="" /></span></a>
+                                    <a href="#" class="icon-comments"><sup>0</sup></a>
                                 </div>
                                 <div class="col-sm-6 text-right">
                                 	<a href="#" class="icon-lightbulb no-bg"></a>
@@ -232,58 +230,279 @@
                         <div class="large-video">
 	                        <a href="#"><img class="img-dull" alt="" src="images/video-large.png"><i class="icon-play"></i></a>
                         </div>
+                        <div class="like-wrap clearfix">
+                        	<div class="pull-left"><img src="images/fb-likes.png" alt="" /></div>
+                            <div class="pull-right">
+	                            <img src="images/addthis.png" alt="" />
+                                <!-- AddThis Button BEGIN -->
+                                <!-- <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                                    <a class="addthis_button_preferred_1"></a>
+                                    <a class="addthis_button_preferred_2"></a>
+                                    <a class="addthis_button_preferred_3"></a>
+                                    <a class="addthis_button_preferred_4"></a>
+                                    <a class="addthis_button_compact"></a>
+                                    <a class="addthis_counter addthis_bubble_style"></a>
+                                </div>
+					            <script type="text/javascript"
+								src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-52662ae10bed79c6"></script>
+                                -->
+                                
+								<!-- AddThis Button END -->
+                            </div>
+                        </div>
+                        
                         <div class="singer-wrap clearfix">
-                        	<div class="photo-section photo-section-2">
-                                <img class="img-thumbnail" src="images/singer.png" alt=""/>
-                                <a href="#">Embed <span class="icon-caret-right"></span></a>
-                            </div>
-                            <p>Baltej Singh</p>
-                            <div class="video-status">
-                                <span class="icon-eye-open"></span> 12&nbsp;&nbsp;
-                                <span class="icon-thumbs-down"></span> 0&nbsp;&nbsp;
-                                <span class="icon-thumbs-up"></span> 12
-                            </div>
+                        	<div class="row">
+                                <div class="col-sm-8">
+                                    <div class="photo-section">
+                                        <img class="img-thumbnail" src="images/singer.png" alt=""/>
+                                        <a href="#" class="theme-btn">Embed</a>
+                                    </div>
+                                    <h5>Baltej Singh</h5>
+                                    <div class="video-status">
+                                        <span class="icon-eye-open"></span> 12&nbsp;&nbsp;
+                                        <span class="icon-thumbs-down"></span> 0&nbsp;&nbsp;
+                                        <span class="icon-thumbs-up"></span> 12
+                                    </div>
+                                </div><!-- col-sm-8 -->
+                                <div class="col-sm-4">
+                                	<div class="like-bar">
+                                        <span class="icon-star icon-2x yellow"></span>
+                                        <span class="icon-star icon-2x yellow"></span>
+                                        <span class="icon-star icon-2x yellow"></span>
+                                        <span class="icon-star icon-2x yellow"></span>
+                                        <span class="icon-star icon-2x"></span><br>
+										<span>3 stars based on 2 ratings</span>
+	                                </div>
+                                </div><!-- col-sm-4 -->
+							</div>
                         </div>
                         <h2>
                         	<span>More Videos from this Category</span>
-                            <span class="pull-right">
-                            	<span class="icon-chevron-left gray-color"></span>
-                                <span class="icon-chevron-right"></span>
-                            </span>
                        </h2>
-						<div class="clearfix video-thumb-wrap video-thumb-wrap-2 ">
+						<div class="clearfix slider-wrap">
                         	<ul class="bx-slider">
                             	<li>
-                                	<div class="photo-section photo-section-2">
-                                        <a href="#"><img  class="img-dull img-thumbnail" src="images/video-large.png" alt="" />
-                                        	<i class="icon-play"></i>
-                                        </a>
-                                    </div>
+                                	<div class="row">
+                                    	<div class="col-sm-6">
+                                        	<div class="video-rated clearfix">
+                                                <div class="video-rated-photo">
+                                                    <a href="#">
+                                                        <img class="img-dull" alt="" src="images/video-mediun.png">
+                                                        <i class="icon-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="video-rated-info">
+                                                    <h4>Kid Fail Compilation - <br>
+                                                        100 Kids Fails (20 ..</h4>
+                                                    <div class="comment-section">
+                                                        <em class="icon-time"></em> <span> 2 days ago</span>
+                                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video-rated clearfix">
+                                                <div class="video-rated-photo">
+                                                    <a href="#">
+                                                        <img class="img-dull" alt="" src="images/video-mediun.png">
+                                                        <i class="icon-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="video-rated-info">
+                                                    <h4>Kid Fail Compilation - <br>
+                                                        100 Kids Fails (20 ..</h4>
+                                                    <div class="comment-section">
+                                                        <em class="icon-time"></em> <span> 2 days ago</span>
+                                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- col-sm-6 -->
+                                        <div class="col-sm-6">
+                                        	<div class="video-rated clearfix">
+                                                <div class="video-rated-photo">
+                                                    <a href="#">
+                                                        <img class="img-dull" alt="" src="images/video-mediun.png">
+                                                        <i class="icon-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="video-rated-info">
+                                                    <h4>Kid Fail Compilation - <br>
+                                                        100 Kids Fails (20 ..</h4>
+                                                    <div class="comment-section">
+                                                        <em class="icon-time"></em> <span> 2 days ago</span>
+                                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                                    </div>
+                                                </div><!-- video-rated-info -->
+                                            </div><!-- video-rated -->
+                                            <div class="video-rated clearfix">
+                                                <div class="video-rated-photo">
+                                                    <a href="#">
+                                                        <img class="img-dull" alt="" src="images/video-mediun.png">
+                                                        <i class="icon-play"></i>
+                                                    </a>
+                                                </div><!-- video-rated-photo -->
+                                                <div class="video-rated-info">
+                                                    <h4>Kid Fail Compilation - <br>
+                                                        100 Kids Fails (20 ..</h4>
+                                                    <div class="comment-section">
+                                                        <em class="icon-time"></em> <span> 2 days ago</span>
+                                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                                    </div>
+                                                </div><!-- video-rated-info -->
+                                            </div><!-- video-rated -->
+                                        </div><!-- col-sm-6 -->
+                                    </div><!-- row end-->
                                 </li>
                                 <li>
-                                	<div class="photo-section photo-section-2">
-                                        <a href="#"><img  class="img-dull img-thumbnail" src="images/video-large.png" alt="" />
-                                        	<i class="icon-play"></i>
-                                        </a>
-                                    </div>
+                                	<div class="row">
+                                    	<div class="col-sm-6">
+                                        	<div class="video-rated clearfix">
+                                                <div class="video-rated-photo">
+                                                    <a href="#">
+                                                        <img class="img-dull" alt="" src="images/video-mediun.png">
+                                                        <i class="icon-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="video-rated-info">
+                                                    <h4>Kid Fail Compilation - <br>
+                                                        100 Kids Fails (20 ..</h4>
+                                                    <div class="comment-section">
+                                                        <em class="icon-time"></em> <span> 2 days ago</span>
+                                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video-rated clearfix">
+                                                <div class="video-rated-photo">
+                                                    <a href="#">
+                                                        <img class="img-dull" alt="" src="images/video-mediun.png">
+                                                        <i class="icon-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="video-rated-info">
+                                                    <h4>Kid Fail Compilation - <br>
+                                                        100 Kids Fails (20 ..</h4>
+                                                    <div class="comment-section">
+                                                        <em class="icon-time"></em> <span> 2 days ago</span>
+                                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- col-sm-6 -->
+                                        <div class="col-sm-6">
+                                        	<div class="video-rated clearfix">
+                                                <div class="video-rated-photo">
+                                                    <a href="#">
+                                                        <img class="img-dull" alt="" src="images/video-mediun.png">
+                                                        <i class="icon-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="video-rated-info">
+                                                    <h4>Kid Fail Compilation - <br>
+                                                        100 Kids Fails (20 ..</h4>
+                                                    <div class="comment-section">
+                                                        <em class="icon-time"></em> <span> 2 days ago</span>
+                                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                                    </div>
+                                                </div><!-- video-rated-info -->
+                                            </div><!-- video-rated -->
+                                            <div class="video-rated clearfix">
+                                                <div class="video-rated-photo">
+                                                    <a href="#">
+                                                        <img class="img-dull" alt="" src="images/video-mediun.png">
+                                                        <i class="icon-play"></i>
+                                                    </a>
+                                                </div><!-- video-rated-photo -->
+                                                <div class="video-rated-info">
+                                                    <h4>Kid Fail Compilation - <br>
+                                                        100 Kids Fails (20 ..</h4>
+                                                    <div class="comment-section">
+                                                        <em class="icon-time"></em> <span> 2 days ago</span>
+                                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                                    </div>
+                                                </div><!-- video-rated-info -->
+                                            </div><!-- video-rated -->
+                                        </div><!-- col-sm-6 -->
+                                    </div><!-- row end-->
                                 </li>
                                 <li>
-                                	<div class="photo-section photo-section-2">
-                                        <a href="#"><img  class="img-dull img-thumbnail" src="images/video-large.png" alt="" />
-                                        	<i class="icon-play"></i>
-                                        </a>
-                                    </div>
+                                	<div class="row">
+                                    	<div class="col-sm-6">
+                                        	<div class="video-rated clearfix">
+                                                <div class="video-rated-photo">
+                                                    <a href="#">
+                                                        <img class="img-dull" alt="" src="images/video-mediun.png">
+                                                        <i class="icon-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="video-rated-info">
+                                                    <h4>Kid Fail Compilation - <br>
+                                                        100 Kids Fails (20 ..</h4>
+                                                    <div class="comment-section">
+                                                        <em class="icon-time"></em> <span> 2 days ago</span>
+                                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video-rated clearfix">
+                                                <div class="video-rated-photo">
+                                                    <a href="#">
+                                                        <img class="img-dull" alt="" src="images/video-mediun.png">
+                                                        <i class="icon-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="video-rated-info">
+                                                    <h4>Kid Fail Compilation - <br>
+                                                        100 Kids Fails (20 ..</h4>
+                                                    <div class="comment-section">
+                                                        <em class="icon-time"></em> <span> 2 days ago</span>
+                                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- col-sm-6 -->
+                                        <div class="col-sm-6">
+                                        	<div class="video-rated clearfix">
+                                                <div class="video-rated-photo">
+                                                    <a href="#">
+                                                        <img class="img-dull" alt="" src="images/video-mediun.png">
+                                                        <i class="icon-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="video-rated-info">
+                                                    <h4>Kid Fail Compilation - <br>
+                                                        100 Kids Fails (20 ..</h4>
+                                                    <div class="comment-section">
+                                                        <em class="icon-time"></em> <span> 2 days ago</span>
+                                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                                    </div>
+                                                </div><!-- video-rated-info -->
+                                            </div><!-- video-rated -->
+                                            <div class="video-rated clearfix">
+                                                <div class="video-rated-photo">
+                                                    <a href="#">
+                                                        <img class="img-dull" alt="" src="images/video-mediun.png">
+                                                        <i class="icon-play"></i>
+                                                    </a>
+                                                </div><!-- video-rated-photo -->
+                                                <div class="video-rated-info">
+                                                    <h4>Kid Fail Compilation - <br>
+                                                        100 Kids Fails (20 ..</h4>
+                                                    <div class="comment-section">
+                                                        <em class="icon-time"></em> <span> 2 days ago</span>
+                                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                                    </div>
+                                                </div><!-- video-rated-info -->
+                                            </div><!-- video-rated -->
+                                        </div><!-- col-sm-6 -->
+                                    </div><!-- row end-->
                                 </li>
-                                <li>
-                                	<div class="photo-section photo-section-2">
-                                        <a href="#"><img  class="img-dull img-thumbnail" src="images/video-large.png" alt="" />
-                                        	<i class="icon-play"></i>
-                                        </a>
-                                    </div>
-                                </li>
+                                
+                                
+                                
                             </ul>
                         </div><!-- clearfix video-thumb-wrap -->
-                        <h3>Comments</h3>
                         <img src="images/comments-box.png" alt="" />
 		            </div><!--contents -->
                     <div class="col-sm-4" id="sidebar">
