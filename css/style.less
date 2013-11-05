@@ -99,8 +99,8 @@ h4{
 
 /* Links
 ______________________*/
-a{ color:#025e8e; }
-a:hover { }
+a{ color:#ff7222; }
+a:hover { color: darken(#ff7222, 10% ); }
 
 /* p, blockquote, address
 ______________________*/
@@ -320,12 +320,6 @@ ______________________*/
 	.like-bar{
 		padding-top:5px;
 	}
-	
-.border-bottom{
-	border-bottom:1px solid #e7e7e7;
-	margin-bottom:10px;
-	padding-bottom:4px;
-}
 .vertical-align{
 	width:100%;
 	display:table;
@@ -347,6 +341,12 @@ ______________________*/
 		padding:10px;
 		float:right\9;
 	}
+.video-controls-bar{
+	a{
+		backface-visibility:visible;
+	}
+}
+	
 .icons-thumbs{
 	margin-bottom:15px;
 }
@@ -856,6 +856,10 @@ a:hover > .img-dull{
     box-shadow: none;
     left: 0;
 }
+.bx-wrapper a:hover{
+	text-decoration:none;
+}
+
 
 
 /* Alignments */
