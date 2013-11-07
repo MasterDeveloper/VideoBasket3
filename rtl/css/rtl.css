@@ -178,11 +178,6 @@ text-right
 .rtl .list-item{
 	margin:0 55px 20px 0;
 }
-.rtl .video-list .number{
-	float:right;
-	margin:0 0 0 10px;
-}
-
 @media (max-width: 979px) {
 .rtl .cat-list{	
 	padding:14px 14px 0;
@@ -191,6 +186,11 @@ text-right
 .rtl .video-list .large-video{
 	float:none !important;
 	width: auto;
+}
+.rtl .video-list .number{
+	float:right;
+	margin:0 0 0 10px;
+}
 }
 
 @media (max-width: 767px) {

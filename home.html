@@ -41,8 +41,10 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/scrool-bar.js"></script>
     <script type="text/javascript">
 		$(function(){
+			$('#scrollbar1').tinyscrollbar();
 			if($(window).width() > 1200){
 				var slides = 5;
 				 var pager = true
@@ -119,8 +121,41 @@
 <div id="main-wrap">
 <div class="pattren-bg">
 	<div class="container">
-    	<div class="black-gradient navigation clearfix">
+      <nav class="navbar navbar-inverse" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navbar-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="pull-right">
+                <ul class="list-inline text-right">
+                    <a href="#" class="facebook"><span class="icon-facebook"></span></a>
+                    <a href="#" class="twitter"><span class="icon-twitter"></span></a>
+                    <a href="#" class="pinterest"><span class="icon-pinterest"></span></a>
+                    <a href="#" class="youtube"><span class="icon-youtube"></span></a>
+                    <a href="#" class="rss"><span class="icon-rss"></span></a>
+                </ul>
+            </div>
+          </div>
+        
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </nav>
     
+    
+    
+    
+    
+    	<div class="black-gradient navigation clearfix">
+    		
             <ul class="nav  list-inline col-sm-7">
                 <li><a href="#">Recent Videos</a></li>
                 <li><a href="#">Popular Videos</a></li>
@@ -283,7 +318,11 @@
                         <div class="thumbnail-wrap row">
                         	<div class="col-sm-6">
                             	<div class="thumbnail">
-	                            	<img src="images/video-1.png" alt="" />
+	                                <a href="#">
+                                        <img src="images/video-1.png" alt="" class="img-dull" />
+                                        <i class="icon-play"></i>
+                                    </a>
+	                            	
                                     <div class="thumb-title clearfix">
                                     	<p>Fail Compilation Week 1and 2 June 2013.</p>
                                     </div>
@@ -298,7 +337,11 @@
                             
                             <div class="col-sm-6">
                             	<div class="thumbnail">
-	                            	<img src="images/video-1.png" alt="" />
+	                                <a href="#">
+                                        <img src="images/video-1.png" alt="" class="img-dull" />
+                                        <i class="icon-play"></i>
+                                    </a>
+	                            	
                                     <div class="thumb-title clearfix">
                                     	<p>Fail Compilation Week 1and 2 June 2013.</p>
                                     </div>
@@ -320,7 +363,11 @@
                         <div class="thumbnail-wrap row">
                         	<div class="col-sm-6">
                             	<div class="thumbnail">
-	                            	<img src="images/video-1.png" alt="" />
+	                                <a href="#">
+                                        <img src="images/video-1.png" alt="" class="img-dull" />
+                                        <i class="icon-play"></i>
+                                    </a>
+	                            	
                                     <div class="thumb-title clearfix">
                                     	<p>Fail Compilation Week 1and 2 June 2013.</p>
                                     </div>
@@ -335,7 +382,11 @@
                             
                             <div class="col-sm-6">
                             	<div class="thumbnail">
-	                            	<img src="images/video-1.png" alt="" />
+	                                <a href="#">
+                                        <img src="images/video-1.png" alt="" class="img-dull" />
+                                        <i class="icon-play"></i>
+                                    </a>
+	                            	
                                     <div class="thumb-title clearfix">
                                     	<p>Fail Compilation Week 1and 2 June 2013.</p>
                                     </div>
@@ -358,7 +409,11 @@
                         <div class="thumbnail-wrap row">
                         	<div class="col-sm-6">
                             	<div class="thumbnail">
-	                            	<img src="images/video-1.png" alt="" />
+	                                <a href="#">
+                                        <img src="images/video-1.png" alt="" class="img-dull" />
+                                        <i class="icon-play"></i>
+                                    </a>
+	                            	
                                     <div class="thumb-title clearfix">
                                     	<p>Fail Compilation Week 1and 2 June 2013.</p>
                                     </div>
@@ -373,7 +428,11 @@
                             
                             <div class="col-sm-6">
                             	<div class="thumbnail">
-	                            	<img src="images/video-1.png" alt="" />
+	                                <a href="#">
+                                        <img src="images/video-1.png" alt="" class="img-dull" />
+                                        <i class="icon-play"></i>
+                                    </a>
+	                            	
                                     <div class="thumb-title clearfix">
                                     	<p>Fail Compilation Week 1and 2 June 2013.</p>
                                     </div>
@@ -396,7 +455,11 @@
                         <div class="thumbnail-wrap row">
                         	<div class="col-sm-6">
                             	<div class="thumbnail">
-	                            	<img src="images/video-1.png" alt="" />
+	                                <a href="#">
+                                        <img src="images/video-1.png" alt="" class="img-dull" />
+                                        <i class="icon-play"></i>
+                                    </a>
+	                            	
                                     <div class="thumb-title clearfix">
                                     	<p>Fail Compilation Week 1and 2 June 2013.</p>
                                     </div>
@@ -411,7 +474,11 @@
                             
                             <div class="col-sm-6">
                             	<div class="thumbnail">
-	                            	<img src="images/video-1.png" alt="" />
+	                                <a href="#">
+                                        <img src="images/video-1.png" alt="" class="img-dull" />
+                                        <i class="icon-play"></i>
+                                    </a>
+	                            	
                                     <div class="thumb-title clearfix">
                                     	<p>Fail Compilation Week 1and 2 June 2013.</p>
                                     </div>
@@ -630,72 +697,84 @@
                 <div class="col-sm-4">
                     <h3>Random Posts </h3>
                     <div class="video-rated">
-                        <ul>
-                            <li>
-                                <div class="video-rated-photo">
-                                    <a href="#">
-                                        <img class="img-dull" alt="" src="images/video-small-1.png">
-                                        <i class="icon-play"></i>
-                                    </a>
-                                </div>
-                                <div class="video-rated-info">
-                                    <h4>Best Sports Fights Of All Time..</h4>
-                                    <div class="comment-section">
-                                        <em class="icon-time"></em> <span> 4 days ago</span>
-                                        <em class="icon-eye-open"></em> <span> 3</span>
+                    <div id="scrollbar1">
+                    <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                    <div class="viewport">
+                        <div class="overview">
+                        <div class="scroll-section">
+                            <ul>
+                                <li>
+                                    <div class="video-rated-photo">
+                                        <a href="#">
+                                            <img class="img-dull" alt="" src="images/video-small-1.png">
+                                            <i class="icon-play"></i>
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="cl"></div>
-                            </li>
-                            <li>
-                                <div class="video-rated-photo">
-                                    <a href="#">
-                                        <img class="img-dull" alt="" src="images/video-small-1.png">
-                                        <i class="icon-play"></i>
-                                    </a>
-                                </div>
-                                <div class="video-rated-info">
-                                    <h4>Best Sports Fights Of All Time..</h4>
-                                    <div class="comment-section">
-                                        <em class="icon-time"></em> <span> 4 days ago</span>
-                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                    <div class="video-rated-info">
+                                        <h4>Best Sports Fights Of All Time..</h4>
+                                        <div class="comment-section">
+                                            <em class="icon-time"></em> <span> 4 days ago</span>
+                                            <em class="icon-eye-open"></em> <span> 3</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="cl"></div>
-                            </li>
-                            <li>
-                                <div class="video-rated-photo">
-                                    <a href="#">
-                                        <img class="img-dull" alt="" src="images/video-small-1.png">
-                                        <i class="icon-play"></i>
-                                    </a>
-                                </div>
-                                <div class="video-rated-info">
-                                    <h4>Best Sports Fights Of All Time..</h4>
-                                    <div class="comment-section">
-                                        <em class="icon-time"></em> <span> 4 days ago</span>
-                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                    <div class="cl"></div>
+                                </li>
+                                <li>
+                                    <div class="video-rated-photo">
+                                        <a href="#">
+                                            <img class="img-dull" alt="" src="images/video-small-1.png">
+                                            <i class="icon-play"></i>
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="cl"></div>
-                            </li>
-                            <li>
-                                <div class="video-rated-photo">
-                                    <a href="#">
-                                        <img class="img-dull" alt="" src="images/video-small-1.png">
-                                        <i class="icon-play"></i>
-                                    </a>
-                                </div>
-                                <div class="video-rated-info">
-                                    <h4>Best Sports Fights Of All Time..</h4>
-                                    <div class="comment-section">
-                                        <em class="icon-time"></em> <span> 4 days ago</span>
-                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                    <div class="video-rated-info">
+                                        <h4>Best Sports Fights Of All Time..</h4>
+                                        <div class="comment-section">
+                                            <em class="icon-time"></em> <span> 4 days ago</span>
+                                            <em class="icon-eye-open"></em> <span> 3</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="cl"></div>
-                            </li>
-                        </ul>
+                                    <div class="cl"></div>
+                                </li>
+                                <li>
+                                    <div class="video-rated-photo">
+                                        <a href="#">
+                                            <img class="img-dull" alt="" src="images/video-small-1.png">
+                                            <i class="icon-play"></i>
+                                        </a>
+                                    </div>
+                                    <div class="video-rated-info">
+                                        <h4>Best Sports Fights Of All Time..</h4>
+                                        <div class="comment-section">
+                                            <em class="icon-time"></em> <span> 4 days ago</span>
+                                            <em class="icon-eye-open"></em> <span> 3</span>
+                                        </div>
+                                    </div>
+                                    <div class="cl"></div>
+                                </li>
+                                <li>
+                                    <div class="video-rated-photo">
+                                        <a href="#">
+                                            <img class="img-dull" alt="" src="images/video-small-1.png">
+                                            <i class="icon-play"></i>
+                                        </a>
+                                    </div>
+                                    <div class="video-rated-info">
+                                        <h4>Best Sports Fights Of All Time..</h4>
+                                        <div class="comment-section">
+                                            <em class="icon-time"></em> <span> 4 days ago</span>
+                                            <em class="icon-eye-open"></em> <span> 3</span>
+                                        </div>
+                                    </div>
+                                    <div class="cl"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+
+                        
                     </div>
 					</div>
                 </div>
