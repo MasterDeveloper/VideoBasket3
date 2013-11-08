@@ -41,8 +41,10 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/scrool-bar.js"></script>
     <script type="text/javascript">
 		$(function(){
+			$('#scrollbar1').tinyscrollbar();
 			$('.bx-slider').bxSlider({
 				auto: true,
 				pager	:	false
@@ -68,8 +70,7 @@
 				moveSlides: 1,
 				slideWidth: 160,
 				slideMargin: 12,
-				pager:	false,
-				controls: pager
+				pager: false
 				
 			});
 		});
@@ -91,11 +92,11 @@
             <div class="row">
                 <div class="col-sm-4"><div class="logo"><a href="#"><img src="images/logo.png" alt="" /></a></div></div>
                 <div class="col-sm-5">
-                	<form class="form-inline row" role="form">
-                      <div class="form-group col-sm-10">
+                	<form class="form-inline" role="form">
+                      <div class="form-group">
                         <input type="email" class="form-control " id="exampleInputEmail2" placeholder="Enter email">
                       </div>
-                       <button type="submit" class="btn btn-warning col-sm-2"><span class="arrow-right">&raquo;</span> Search</button>
+                       <button type="submit" class="btn btn-warning"><span class="arrow-right">&raquo;</span> Search</button>
                     </form>
                 </div>
                 <div class="col-sm-3">
@@ -112,28 +113,57 @@
 </div>
 <!--header end -->
 
-	
 <!--main start -->
 <div id="main-wrap">
-	<div class="container">
-    	<div class="black-gradient navigation clearfix">
+	<div class="container ">
     
-            <ul class="nav  list-inline col-sm-7">
-                <li><a href="#">Recent Videos</a></li>
-                <li><a href="#">Popular Videos</a></li>
-                <li><a href="#">Play Random</a></li>
-            </ul>
-            <div class="social-bar col-sm-5">
-                <ul class="list-inline text-right">
+        <nav class="navbar navbar-inverse" role="navigation">
+        
+            <div class="navbar-header visible-xs black-gradient">
+            
+	            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navbar-1">
+	                <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!-- navbar-toggle pull-left -->
+                
+                <div class="pull-right social-bar visible-xs text-right">
                     <a href="#" class="facebook"><span class="icon-facebook"></span></a>
                     <a href="#" class="twitter"><span class="icon-twitter"></span></a>
                     <a href="#" class="pinterest"><span class="icon-pinterest"></span></a>
                     <a href="#" class="youtube"><span class="icon-youtube"></span></a>
                     <a href="#" class="rss"><span class="icon-rss"></span></a>
-                </ul>
-            </div>
-		</div>
-    </div>
+                </div><!-- pull-right social-bar visible-xs text-right -->
+                
+            </div><!-- navbar-header visible-xs black-gradient -->
+            
+            
+            <div class="collapse navbar-collapse" id="navbar-1">
+                <div class="navbar-inner">
+                    <div class="pull-right social-bar hidden-xs text-right">
+                        <a href="#" class="facebook"><span class="icon-facebook"></span></a>
+                        <a href="#" class="twitter"><span class="icon-twitter"></span></a>
+                        <a href="#" class="pinterest"><span class="icon-pinterest"></span></a>
+                        <a href="#" class="youtube"><span class="icon-youtube"></span></a>
+                        <a href="#" class="rss"><span class="icon-rss"></span></a>
+                    </div><!-- pull-right social-bar hidden-xs text-right -->
+                    
+                    <ul class="nav nav-justified">
+                        <li><a href="#">Recent Videos</a></li>
+                        <li><a href="#">Popular Videos</a></li>
+                        <li><a href="#">Play Random</a></li>
+                    </ul><!-- nav nav-justified --->
+                    
+                    
+                </div><!-- navbar-inner -->
+                
+            </div><!-- collapse navbar-collapse -->
+            
+        </nav><!-- navbar navbar-inverse -->
+        
+    </div><!--container-->
+    
     <div class="banner-warp">
     	<div class="container">
         	<div class="slider-wrap black-gradient">
@@ -705,88 +735,92 @@
                 <div class="col-sm-4">
                     <h3>Random Posts </h3>
                     <div class="video-rated">
-                        <ul>
-                            <li>
-                                <div class="video-rated-photo">
-                                    <a href="#">
-                                        <img class="img-dull" alt="" src="images/video-small-1.png">
-                                        <i class="icon-play"></i>
-                                    </a>
-                                </div>
-                                <div class="video-rated-info">
-                                    <h4>Best Sports Fights Of All Time..</h4>
-                                    <div class="comment-section">
-                                        <em class="icon-time"></em> <span> 4 days ago</span>
-                                        <em class="icon-eye-open"></em> <span> 3</span>
+                    <div id="scrollbar1">
+                    <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                    <div class="viewport">
+                        <div class="overview">
+                        <div class="scroll-section">
+                            <ul>
+                                <li>
+                                    <div class="video-rated-photo">
+                                        <a href="#">
+                                            <img class="img-dull" alt="" src="images/video-small-1.png">
+                                            <i class="icon-play"></i>
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="cl"></div>
-                            </li>
-                            <li>
-                                <div class="video-rated-photo">
-                                    <a href="#">
-                                        <img class="img-dull" alt="" src="images/video-small-1.png">
-                                        <i class="icon-play"></i>
-                                    </a>
-                                </div>
-                                <div class="video-rated-info">
-                                    <h4>Best Sports Fights Of All Time..</h4>
-                                    <div class="comment-section">
-                                        <em class="icon-time"></em> <span> 4 days ago</span>
-                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                    <div class="video-rated-info">
+                                        <h4>Best Sports Fights Of All Time..</h4>
+                                        <div class="comment-section">
+                                            <em class="icon-time"></em> <span> 4 days ago</span>
+                                            <em class="icon-eye-open"></em> <span> 3</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="cl"></div>
-                            </li>
-                            <li>
-                                <div class="video-rated-photo">
-                                    <a href="#">
-                                        <img class="img-dull" alt="" src="images/video-small-1.png">
-                                        <i class="icon-play"></i>
-                                    </a>
-                                </div>
-                                <div class="video-rated-info">
-                                    <h4>Best Sports Fights Of All Time..</h4>
-                                    <div class="comment-section">
-                                        <em class="icon-time"></em> <span> 4 days ago</span>
-                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                    <div class="cl"></div>
+                                </li>
+                                <li>
+                                    <div class="video-rated-photo">
+                                        <a href="#">
+                                            <img class="img-dull" alt="" src="images/video-small-1.png">
+                                            <i class="icon-play"></i>
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="cl"></div>
-                            </li>
-                            <li>
-                                <div class="video-rated-photo">
-                                    <a href="#">
-                                        <img class="img-dull" alt="" src="images/video-small-1.png">
-                                        <i class="icon-play"></i>
-                                    </a>
-                                </div>
-                                <div class="video-rated-info">
-                                    <h4>Best Sports Fights Of All Time..</h4>
-                                    <div class="comment-section">
-                                        <em class="icon-time"></em> <span> 4 days ago</span>
-                                        <em class="icon-eye-open"></em> <span> 3</span>
+                                    <div class="video-rated-info">
+                                        <h4>Best Sports Fights Of All Time..</h4>
+                                        <div class="comment-section">
+                                            <em class="icon-time"></em> <span> 4 days ago</span>
+                                            <em class="icon-eye-open"></em> <span> 3</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="cl"></div>
-                            </li>
-                        </ul>
+                                    <div class="cl"></div>
+                                </li>
+                                <li>
+                                    <div class="video-rated-photo">
+                                        <a href="#">
+                                            <img class="img-dull" alt="" src="images/video-small-1.png">
+                                            <i class="icon-play"></i>
+                                        </a>
+                                    </div>
+                                    <div class="video-rated-info">
+                                        <h4>Best Sports Fights Of All Time..</h4>
+                                        <div class="comment-section">
+                                            <em class="icon-time"></em> <span> 4 days ago</span>
+                                            <em class="icon-eye-open"></em> <span> 3</span>
+                                        </div>
+                                    </div>
+                                    <div class="cl"></div>
+                                </li>
+                                <li>
+                                    <div class="video-rated-photo">
+                                        <a href="#">
+                                            <img class="img-dull" alt="" src="images/video-small-1.png">
+                                            <i class="icon-play"></i>
+                                        </a>
+                                    </div>
+                                    <div class="video-rated-info">
+                                        <h4>Best Sports Fights Of All Time..</h4>
+                                        <div class="comment-section">
+                                            <em class="icon-time"></em> <span> 4 days ago</span>
+                                            <em class="icon-eye-open"></em> <span> 3</span>
+                                        </div>
+                                    </div>
+                                    <div class="cl"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
                     </div>
-					</div>
-                </div>
-            </div>
-            
+                    </div>
+                    </div><!-- video-rated -->
+                </div><!-- col-sm-4 -->
+            </div><!-- row -->
         </div><!--footer -->
+    </div><!-- container -->
+    <div id="footer-bot-wrap">
+        <div class="container">
+            &copy; 2013 -2014 Video basket. All rights reserved.
+        </div>
     </div>
-</div>
-<!--footer end -->
-
-<div id="footer-bot-wrap">
-	<div class="container">
-    	&copy; 2013 -2014 Video basket. All rights reserved.
-    </div>
-</div>
-
+</div><!-- footer End -->
 </div><!--container-fluid -->
 
 </body>
