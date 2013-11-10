@@ -26,9 +26,9 @@
 	border-radius: @radius;
 }
 .box-shadow(@shadow:0 0 3px rgba(0,0,0, 0.2)){
--moz-box-shadow:@shadow;
--webkit-box-shadow:@shadow;
-box-shadow:@shadow;
+	-moz-box-shadow:@shadow;
+	-webkit-box-shadow:@shadow;
+	box-shadow:@shadow;
 }
 
 
@@ -226,6 +226,8 @@ ______________________*/
 	.thumbnail{
 		position:relative;
 		a{
+			position:relative;
+			display:block;
 			&:hover{
 				text-decoration:none;
 			}
@@ -554,6 +556,9 @@ ______________________*/
 			-webkit-box-shadow:0 0 3px rgba(0,0,0, 0.2);
 			box-shadow:0 0 3px rgba(0,0,0, 0.2);
 			.radius(2px);
+			a{
+				position:relative;	
+			}
 		}
 			.large-video a,
 			.video-rated-photo a{
@@ -668,6 +673,15 @@ a:hover > .img-dull{
 	filter:alpha(opacity=100);
 }
 
+.photo{
+	a{
+		position:relative;
+		&:hover{
+			text-decoration:none;
+		}
+	}
+}
+
 /* veriable classes*/
 .blue-gradient{
 	background-color: #106694;
@@ -682,6 +696,11 @@ a:hover > .img-dull{
 .tab-footer{
 	padding:5px 15px;
 }
+
+
+
+
+
 
 /*  Footer 
 -------------------------------------- */
@@ -1178,6 +1197,15 @@ a:hover > .img-dull{
 }
 
 @media (max-width: 767px) { 
+.navbar-collapse li{
+	width:auto;
+	border-right:none;
+	border-top: 2px groove #333333;
+	&:first-child{
+		border-top:none;
+	}
+}
+
 .video-rated-info{
 	br{
 		display:none;
@@ -1220,7 +1248,6 @@ a:hover > .img-dull{
 }
 
 @media (max-width: 479px) { 
-
 .video-thumb-wrap .col-sm-3{
 	width:auto;
 	float:none;

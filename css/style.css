@@ -217,6 +217,10 @@ ______________________*/
 .thumbnail {
   position: relative;
 }
+.thumbnail a {
+  position: relative;
+  display: block;
+}
 .thumbnail a:hover {
   text-decoration: none;
 }
@@ -539,6 +543,9 @@ ______________________*/
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
+.video-rated-photo a {
+  position: relative;
+}
 .large-video a,
 .video-rated-photo a {
   display: block;
@@ -647,6 +654,12 @@ a .icon-play {
 a:hover > .img-dull {
   opacity: 1;
   filter: alpha(opacity=100);
+}
+.photo a {
+  position: relative;
+}
+.photo a:hover {
+  text-decoration: none;
 }
 /* veriable classes*/
 .blue-gradient {
@@ -1196,6 +1209,14 @@ a:hover > .img-dull {
   }
 }
 @media (max-width: 767px) {
+  .navbar-collapse li {
+    width: auto;
+    border-right: none;
+    border-top: 2px groove #333333;
+  }
+  .navbar-collapse li:first-child {
+    border-top: none;
+  }
   .video-rated-info br {
     display: none;
   }
