@@ -100,7 +100,7 @@
   padding: 15px 14px 10px 0;
 }
 .rtl .cat-list li {
-  background-position: right 4px;
+  background: url(../images/list-item-rtl.png) no-repeat right 4px;
   padding: 0 17px 5px 0;
 }
 .rtl .photo-section {
@@ -111,9 +111,7 @@
 }
 .rtl #footer .footer-list li {
   padding: 0 15px 10px 0;
-}
-.rtl #footer .footer-list li {
-  background-position: right 6px;
+  background: url(../images/arrow-right-rtl.png) no-repeat right 6px;
 }
 .rtl #footer .social-bar em {
   left: auto;

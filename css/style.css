@@ -1161,6 +1161,39 @@ a:hover > .img-dull {
   color: #fcae4e;
   line-height: 69px;
 }
+/**********************
+	 SignUp/Login
+ **********************/
+.modal {
+  z-index: 9999999999;
+}
+.model-wrap {
+  max-width: 600px;
+  margin: 15px auto;
+  background: white;
+  border: 5px solid #ff6e22;
+  border-radius: 15px;
+}
+.model-wrap .form-control:focus {
+  border-color: #ff6e22;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 110, 34, 0.6);
+}
+.model-wrap h3 {
+  margin: 10px 0;
+  color: #ff6e22;
+  font-weight: 500;
+}
+.modal-header h3 {
+  margin-bottom: 0;
+}
+.modal-body {
+  color: #ff6e22;
+  padding: 10px 20px 20px;
+}
+.form-control:focus {
+  border-color: #ff6e22;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 110, 34, 0.6);
+}
 /* Alignments */
 .center {
   text-align: center;
@@ -1218,6 +1251,9 @@ a:hover > .img-dull {
     padding: 0 0 10px;
     width: auto;
     float: none;
+  }
+  #header-wrap .btn {
+    margin-bottom: 4px;
   }
 }
 @media (max-width: 767px) {

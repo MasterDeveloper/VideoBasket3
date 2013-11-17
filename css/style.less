@@ -1139,6 +1139,40 @@ a:hover > .img-dull{
 }
 
 
+/**********************
+	 SignUp/Login
+ **********************/
+.modal{
+	z-index:9999999999;
+}
+.model-wrap{
+	max-width:600px;
+	margin:15px auto;
+	background:white;
+	border:5px solid @themeColor;
+	border-radius: 15px;
+	.form-control:focus{
+		border-color:@themeColor;
+		box-shadow:	0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 110, 34, 0.6);
+	}
+}
+.model-wrap h3{
+	margin:10px 0;
+	color:@themeColor;
+	font-weight:500;
+}
+.modal-header h3{
+	margin-bottom: 0;
+}
+.modal-body{
+	color:@themeColor;
+	padding:10px 20px 20px;
+}
+.form-control:focus{
+	border-color:@themeColor;
+	box-shadow:	0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 110, 34, 0.6);
+}
+
 
 /* Alignments */
 .center { text-align:center }
@@ -1201,6 +1235,9 @@ a:hover > .img-dull{
 			float:none;
 		}
 	}
+}
+#header-wrap .btn{
+	margin-bottom:4px;
 }
 }
 

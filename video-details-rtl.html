@@ -81,9 +81,9 @@
     
 </head>
 
-<body class="rtl">
+<body>
 
-<div id="container-fluid">
+<div id="container-fluid" class="rtl">
 
 <!--header start -->
 <div id="header-wrap">
@@ -102,8 +102,8 @@
                 <div class="col-sm-3">
                 	<div class="header-right">
                     	<p>
-                        	<a href="#" class="btn btn-primary btn-sm"><span class="arrow-right">&raquo;</span> Login</a>
-                            <a href="#" class="btn btn-primary btn-sm"><span class="arrow-right">&raquo;</span> Sign up</a>
+                        	<a href="#myModal" role="button"  data-toggle="modal" class="btn btn-primary btn-sm"><span class="arrow-right">&raquo;</span> Login</a>
+                            <a href="#myModal-2" role="button"  data-toggle="modal" class="btn btn-primary btn-sm"><span class="arrow-right">&raquo;</span> Sign up</a>
                         </p>
                     </div>
                 </div>
@@ -822,6 +822,55 @@
     </div>
 </div><!-- footer End -->
 </div><!--container-fluid -->
+<div id="myModal" class="modal fade signin-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="model-wrap">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Log In</h3>
+        </div>
+        <div class="modal-body">
+            <form  class="row">
+                <div class="col-sm-12">
+                <label>Enter Your Email Address</label>    
+                <p><input type="text" placeholder="Plese Enter Your Email Address" class="form-control"></p>
+                <label>Enter Your Password</label>    
+                <p><input type="text" placeholder="Password" class="form-control"></p>
+                <p class="clearfix"><button class="btn btn-primary col-sm-6">Log In</button></p>
+                <p><label>OR</label></p>
+                <p class="clearfix"><button class="btn btn-primary col-sm-6"><span class="icon-facebook"></span> Log In with Facebook</button></p>
+                <p class="clearfix"><button class="btn btn-info col-sm-6"><span class="icon-twitter"></span> Log In with Twitter </button></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
+
+
+<div id="myModal-2" class="modal fade signin-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="model-wrap">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Sign Up</h3>
+        </div>
+        <div class="modal-body">
+            <form  class="row">
+                <div class="col-sm-12">
+                    <label>Name</label>    
+                    <p><input type="text" placeholder="Full Name" class="form-control"></p>
+                    <label>User Name</label>    
+                    <p><input type="text" placeholder="Choose a User Name" class="form-control"></p>
+                    <label>Email Address</label>    
+                    <p><input type="text" placeholder="Plese Enter Your Email Address" class="form-control"></p>
+                    <label>Password</label>    
+                    <p><input type="text" placeholder="Password" class="form-control"></p>
+                    <label>Confirm Password</label>    
+                    <p><input type="text" placeholder="Confirm Password" class="form-control"></p>
+                    <button class="btn btn-primary col-sm-6 col-xs-6">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>

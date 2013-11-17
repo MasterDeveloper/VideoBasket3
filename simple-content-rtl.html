@@ -18,7 +18,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
     
-    <title>Home Page</title>
+    <title>Simple Content</title>
     
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
     
@@ -46,44 +46,34 @@
 		$(function(){
 			$('#scrollbar1').tinyscrollbar();
 			if($(window).width() > 1200){
-				var slides = 5;
+				var slides = 6;
 			}
 			if($(window).width() < 1200){
-				var slides = 4;
+				var slides = 5;
 			}
 			if($(window).width() < 979){
-				var slides = 2;
+				var slides = 3;
 			}
 			if($(window).width() < 767){
 				var slides = 1;
-				var pager = false
 			}
 			$('.slider-1').bxSlider({
 				auto : true,
 				minSlides: slides,
 				maxSlides: slides,
 				moveSlides: 1,
-				slideWidth: 150,
-				slideMargin: 20,
-				pager:	false,
-			})
-			$('.slider-home').bxSlider({
-				auto : true,
-				minSlides: slides,
-				maxSlides: slides,
-				moveSlides: 1,
-				slideWidth: 200,
-				slideMargin: 15,
-				pager:	false,
+				slideWidth: 160,
+				slideMargin: 12,
+				pager:	false
 				
 			})
 		})
 	</script>
 </head>
 
-<body class="rtl">
+<body>
 
-<div id="container-fluid" class="index-main">
+<div id="container-fluid" class="rtl">
 
 <!--header start -->
 <div id="header-wrap">
@@ -102,8 +92,8 @@
                 <div class="col-sm-3">
                 	<div class="header-right">
                     	<p>
-                        	<a href="#" class="btn btn-primary btn-sm"><span class="arrow-right">&raquo;</span> Login</a>
-                            <a href="#" class="btn btn-primary btn-sm"><span class="arrow-right">&raquo;</span> Sign up</a>
+                        	<a href="#myModal" role="button"  data-toggle="modal" class="btn btn-primary btn-sm"><span class="arrow-right">&raquo;</span> Login</a>
+                            <a href="#myModal-2" role="button"  data-toggle="modal" class="btn btn-primary btn-sm"><span class="arrow-right">&raquo;</span> Sign up</a>
                         </p>
                     </div>
                 </div>
@@ -112,7 +102,6 @@
     </div>
 </div>
 <!--header end -->
-
 	
 <!--main start -->
 <div id="main-wrap">
@@ -166,156 +155,69 @@
     </div><!--container-->
     <div class="banner-warp">
     	<div class="container">
-        	<div class="slider-wrap home-slider-wrap">
-            	<ul class="slider-home">
+        	<div class="slider-wrap black-gradient">
+            	<ul class="slider-1">
                 	<li>
-                        <div class="thumbnail">
-                            <a href="#">
-                            	<img class="img-dull" alt="" src="images/home-slide.png">
-                                <i class="icon-play"></i>
-                            </a>
-                            <div class="thumb-title clearfix">
-                                <h5>EPIC WIN COMPILATION...</h5>
-                                <p><span class="time-text">Duration : 07:29 mins</span></p>
-                            </div>
-                        </div>
-					</li>
+                        <a href="#">
+                        	<img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
+	                        <i class="icon-play"></i>
+                        </a>
+                    </li>
                     <li>
-                        <div class="thumbnail">
-                            <a href="#">
-                            	<img class="img-dull" alt="" src="images/home-slide.png">
-                                <i class="icon-play"></i>
-                            </a>
-                            <div class="thumb-title clearfix">
-                                <h5>EPIC WIN COMPILATION...</h5>
-                                <p><span class="time-text">Duration : 07:29 mins</span></p>
-                            </div>
-                        </div>
-					</li>
-                    
+                        <a href="#">
+                        	<img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
+	                        <i class="icon-play"></i>
+                        </a>
+                    </li>
                     <li>
-                        <div class="thumbnail">
-                            <a href="#">
-                            	<img class="img-dull" alt="" src="images/home-slide.png">
-                                <i class="icon-play"></i>
-                            </a>
-                            <div class="thumb-title clearfix">
-                                <h5>EPIC WIN COMPILATION...</h5>
-                                <p><span class="time-text">Duration : 07:29 mins</span></p>
-                            </div>
-                        </div>
-					</li>
-                    
+                        <a href="#">
+                        	<img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
+	                        <i class="icon-play"></i>
+                        </a>
+                    </li>
                     <li>
-                        <div class="thumbnail">
-                            <a href="#">
-                            	<img class="img-dull" alt="" src="images/home-slide.png">
-                                <i class="icon-play"></i>
-                            </a>
-                            <div class="thumb-title clearfix">
-                                <h5>EPIC WIN COMPILATION...</h5>
-                                <p><span class="time-text">Duration : 07:29 mins</span></p>
-                            </div>
-                        </div>
-					</li>
-                    
+                        <a href="#">
+                        	<img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
+	                        <i class="icon-play"></i>
+                        </a>
+                    </li>
                     <li>
-                        <div class="thumbnail">
-                            <a href="#">
-                            	<img class="img-dull" alt="" src="images/home-slide.png">
-                                <i class="icon-play"></i>
-                            </a>
-                            <div class="thumb-title clearfix">
-                                <h5>EPIC WIN COMPILATION...</h5>
-                                <p><span class="time-text">Duration : 07:29 mins</span></p>
-                            </div>
-                        </div>
-					</li>
-                    
+                        <a href="#">
+                        	<img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
+	                        <i class="icon-play"></i>
+                        </a>
+                    </li>
                     <li>
-                        <div class="thumbnail">
-                            <a href="#">
-                            	<img class="img-dull" alt="" src="images/home-slide.png">
-                                <i class="icon-play"></i>
-                            </a>
-                            <div class="thumb-title clearfix">
-                                <h5>EPIC WIN COMPILATION...</h5>
-                                <p><span class="time-text">Duration : 07:29 mins</span></p>
-                            </div>
-                        </div>
-					</li>
-                    
-    	        </ul>
-			</div>
-        	<div class="black-gradient">
-	        	<div class="left-section">
-                	<h2>Recently Added Videos</h2>
-                	<img class="right-corner" src="images/right-corner.png" alt="" />
-                </div>
-                <div class="slider-wrap">
-                    <ul class="slider-1">
-                        <li>
-                            <a href="#">
-                                <img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
-                                <i class="icon-play"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
-                                <i class="icon-play"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
-                                <i class="icon-play"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
-                                <i class="icon-play"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
-                                <i class="icon-play"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
-                                <i class="icon-play"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
-                                <i class="icon-play"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
-                                <i class="icon-play"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
-                                <i class="icon-play"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
-                                <i class="icon-play"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                        <a href="#">
+                        	<img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
+	                        <i class="icon-play"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        	<img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
+	                        <i class="icon-play"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        	<img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
+	                        <i class="icon-play"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        	<img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
+	                        <i class="icon-play"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        	<img class="thumbnail img-dull" src="images/slider-img.png" alt="" />
+	                        <i class="icon-play"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -324,187 +226,62 @@
             <div class="main-inner">
                 <div class="row">
                     <div class="col-sm-8" id="contents">
-                        <h3>Funny Videos</h3>
-                        <div class="thumbnail-wrap row">
-                        	<div class="col-sm-6">
-                            	<div class="thumbnail">
-	                                <a href="#">
-                                        <img src="images/video-1.png" alt="" class="img-dull" />
-                                        <i class="icon-play"></i>
-                                    </a>
-	                            	
-                                    <div class="thumb-title clearfix">
-                                    	<p>Fail Compilation Week 1and 2 June 2013.</p>
+                        <h2>About Us</h2>
+                        <div class="clearfix border-bot-section">
+                        	<div class="photo-section"><img src="images/photo.png" alt="" /></div>
+                            <p>
+                            	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. 
+Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                        <div class="feature-wrap">
+                            <h2><span>Some Great Services</span></h2>
+                            <div class="row">
+                                <div class="col-sm-4 feature-section">
+                                    <div class="feature-thumb">
+                                        <span class="icon-pencil"></span>
                                     </div>
-                                    <div class="thumb-footer">
-                                        <p>
-                                            <span class="icon-time"></span> 2 days ago&nbsp;&nbsp;&nbsp;
-                                            <span class="icon-eye-open"></span> 5
-                                        </p>
+                                    <h3>Unlimited Colors</h3>
+                                    <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                                        magnsed diam voluptua.</p>
+                                </div>
+                                <div class="col-sm-4 feature-section">
+                                    <div class="feature-thumb">
+                                        <span class="icon-cog"></span>
+                                    </div>    
+                                    <h3>Complete Control</h3>
+                                    <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                                        magnsed diam voluptua.</p>
+                                </div>
+                                <div class="col-sm-4 feature-section">
+                                    <div class="feature-thumb">
+                                        <span class="icon-bar-chart"></span>
                                     </div>
-                                </div><!-- thumbnail -->
-                            </div><!-- col-sm-6 -->
-                            
-                            <div class="col-sm-6">
-                            	<div class="thumbnail">
-	                                <a href="#">
-                                        <img src="images/video-1.png" alt="" class="img-dull" />
-                                        <i class="icon-play"></i>
-                                    </a>
-	                            	
-                                    <div class="thumb-title clearfix">
-                                    	<p>Fail Compilation Week 1and 2 June 2013.</p>
+                                    <h3>Theme Options</h3>
+                                    <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                                        magnsed diam voluptua.</p>
+                                </div>
+                                <div class="cl"></div>
+                                <div class="col-sm-4 feature-section">
+                                    <div class="feature-thumb">
+                                        <span class="icon-repeat"></span>
                                     </div>
-                                    <div class="thumb-footer">
-                                        <p>
-                                            <span class="icon-time"></span> 2 days ago&nbsp;&nbsp;&nbsp;
-                                            <span class="icon-eye-open"></span> 5
-                                        </p>
+                                    <h3>Theme Options</h3>
+                                    <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                                        magnsed diam voluptua.</p>
+                                </div>
+                                <div class="col-sm-4 feature-section">
+                                    <div class="feature-thumb">
+                                        <span class="icon-repeat"></span>
                                     </div>
-                                </div><!-- thumbnail -->
-                            </div><!-- col-sm-6 -->
-                            <div class="thumb-wrap-footer cl">
-                            	<a href="#" class="btn btn-warning btn-xs pull-right more-videos" >More Videos <span>&rsaquo;</span></a>
+                                    <h3>Theme Options</h3>
+                                    <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                                        magnsed diam voluptua.</p>
+                                </div>
                             </div>
-                        </div><!-- thumbnail-wrap -->
-                        
-                        
-                        <h3>Kids Videos</h3>
-                        <div class="thumbnail-wrap row">
-                        	<div class="col-sm-6">
-                            	<div class="thumbnail">
-	                                <a href="#">
-                                        <img src="images/video-1.png" alt="" class="img-dull" />
-                                        <i class="icon-play"></i>
-                                    </a>
-	                            	
-                                    <div class="thumb-title clearfix">
-                                    	<p>Fail Compilation Week 1and 2 June 2013.</p>
-                                    </div>
-                                    <div class="thumb-footer">
-                                        <p>
-                                            <span class="icon-time"></span> 2 days ago&nbsp;&nbsp;&nbsp;
-                                            <span class="icon-eye-open"></span> 5
-                                        </p>
-                                    </div>
-                                </div><!-- thumbnail -->
-                            </div><!-- col-sm-6 -->
-                            
-                            <div class="col-sm-6">
-                            	<div class="thumbnail">
-	                                <a href="#">
-                                        <img src="images/video-1.png" alt="" class="img-dull" />
-                                        <i class="icon-play"></i>
-                                    </a>
-	                            	
-                                    <div class="thumb-title clearfix">
-                                    	<p>Fail Compilation Week 1and 2 June 2013.</p>
-                                    </div>
-                                    <div class="thumb-footer">
-                                        <p>
-                                            <span class="icon-time"></span> 2 days ago&nbsp;&nbsp;&nbsp;
-                                            <span class="icon-eye-open"></span> 5
-                                        </p>
-                                    </div>
-                                </div><!-- thumbnail -->
-                            </div><!-- col-sm-6 -->
-                            <div class="thumb-wrap-footer cl">
-                            	<a href="#" class="btn btn-warning btn-xs pull-right more-videos" >More Videos <span>&rsaquo;</span></a>
-                            </div>
-                            
-                        </div><!-- thumbnail-wrap -->
-                        
-                        
-                        <h3>Dog Videos</h3>
-                        <div class="thumbnail-wrap row">
-                        	<div class="col-sm-6">
-                            	<div class="thumbnail">
-	                                <a href="#">
-                                        <img src="images/video-1.png" alt="" class="img-dull" />
-                                        <i class="icon-play"></i>
-                                    </a>
-	                            	
-                                    <div class="thumb-title clearfix">
-                                    	<p>Fail Compilation Week 1and 2 June 2013.</p>
-                                    </div>
-                                    <div class="thumb-footer">
-                                        <p>
-                                            <span class="icon-time"></span> 2 days ago&nbsp;&nbsp;&nbsp;
-                                            <span class="icon-eye-open"></span> 5
-                                        </p>
-                                    </div>
-                                </div><!-- thumbnail -->
-                            </div><!-- col-sm-6 -->
-                            
-                            <div class="col-sm-6">
-                            	<div class="thumbnail">
-	                                <a href="#">
-                                        <img src="images/video-1.png" alt="" class="img-dull" />
-                                        <i class="icon-play"></i>
-                                    </a>
-	                            	
-                                    <div class="thumb-title clearfix">
-                                    	<p>Fail Compilation Week 1and 2 June 2013.</p>
-                                    </div>
-                                    <div class="thumb-footer">
-                                        <p>
-                                            <span class="icon-time"></span> 2 days ago&nbsp;&nbsp;&nbsp;
-                                            <span class="icon-eye-open"></span> 5
-                                        </p>
-                                    </div>
-                                </div><!-- thumbnail -->
-                            </div><!-- col-sm-6 -->
-                            <div class="thumb-wrap-footer cl">
-                            	<a href="#" class="btn btn-warning btn-xs more-videos" >More Videos <span>&rsaquo;</span></a>
-                            </div>
-                            
-                        </div><!-- thumbnail-wrap -->
-                        
-                        
-                        <h3>Sports Fails</h3>
-                        <div class="thumbnail-wrap row">
-                        	<div class="col-sm-6">
-                            	<div class="thumbnail">
-	                                <a href="#">
-                                        <img src="images/video-1.png" alt="" class="img-dull" />
-                                        <i class="icon-play"></i>
-                                    </a>
-	                            	
-                                    <div class="thumb-title clearfix">
-                                    	<p>Fail Compilation Week 1and 2 June 2013.</p>
-                                    </div>
-                                    <div class="thumb-footer">
-                                        <p>
-                                            <span class="icon-time"></span> 2 days ago&nbsp;&nbsp;&nbsp;
-                                            <span class="icon-eye-open"></span> 5
-                                        </p>
-                                    </div>
-                                </div><!-- thumbnail -->
-                            </div><!-- col-sm-6 -->
-                            
-                            <div class="col-sm-6">
-                            	<div class="thumbnail">
-	                                <a href="#">
-                                        <img src="images/video-1.png" alt="" class="img-dull" />
-                                        <i class="icon-play"></i>
-                                    </a>
-	                            	
-                                    <div class="thumb-title clearfix">
-                                    	<p>Fail Compilation Week 1and 2 June 2013.</p>
-                                    </div>
-                                    <div class="thumb-footer">
-                                        <p>
-                                            <span class="icon-time"></span> 2 days ago&nbsp;&nbsp;&nbsp;
-                                            <span class="icon-eye-open"></span> 5
-                                        </p>
-                                    </div>
-                                </div><!-- thumbnail -->
-                            </div><!-- col-sm-6 -->
-                            <div class="thumb-wrap-footer cl">
-                            	<a href="#" class="btn btn-warning btn-xs pull-right more-videos" >More Videos <span class="right"></span></a>
-                            </div>
-                        </div><!-- thumbnail-wrap -->
-		            </div><!--contents -->
+						</div>
+                    </div><!--contents -->
                     <div class="col-sm-4" id="sidebar">
                     	<div class="sidebar-section">
                             <h3>Categories</h3>
@@ -606,32 +383,14 @@
                                         </div>
                                         <div class="cl"></div>
                                     </li>
-                                    <li>
-                                    	<div class="video-rated-photo">
-                                        	<a href="#">
-                                            	<img src="images/video-mediun.png" alt="" class="img-dull" />
-                                                <i class="icon-play"></i>
-                                            </a>
-                                        </div>
-                                        <div class="video-rated-info">
-                                        	<h4>Kid Fail Compilation - <br />
-												100 Kids Fails (20 ..</h4>
-                                            <div class="comment-section">
-                                            	<em class="icon-time"></em> <span> 2 days ago</span>
-                                                <em class="icon-eye-open"></em> <span> 3</span>
-                                            </div>
-                                        </div>
-                                        <div class="cl"></div>
-                                    </li>
                                 </ul>
                             </div>
                         </div><!--sidebar-section -->
                     </div><!--sidebar -->
                 </div>
             </div>
-            
         </div><!--main -->
-    </div><!-- container -->
+    </div>
 </div>
 <!--main-->
 
@@ -791,9 +550,59 @@
             &copy; 2013 -2014 Video basket. All rights reserved.
         </div>
     </div>
+</div><!-- footer End -->
 </div>
-<!--footer end -->
-</div><!--container-fluid -->
 
+</div><!--container-fluid -->
+<div id="myModal" class="modal fade signin-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="model-wrap">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Log In</h3>
+        </div>
+        <div class="modal-body">
+            <form  class="row">
+                <div class="col-sm-12">
+                <label>Enter Your Email Address</label>    
+                <p><input type="text" placeholder="Plese Enter Your Email Address" class="form-control"></p>
+                <label>Enter Your Password</label>    
+                <p><input type="text" placeholder="Password" class="form-control"></p>
+                <p class="clearfix"><button class="btn btn-primary col-sm-6">Log In</button></p>
+                <p><label>OR</label></p>
+                <p class="clearfix"><button class="btn btn-primary col-sm-6"><span class="icon-facebook"></span> Log In with Facebook</button></p>
+                <p class="clearfix"><button class="btn btn-info col-sm-6"><span class="icon-twitter"></span> Log In with Twitter </button></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="myModal-2" class="modal fade signin-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="model-wrap">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Sign Up</h3>
+        </div>
+        <div class="modal-body">
+            <form  class="row">
+                <div class="col-sm-12">
+                    <label>Name</label>    
+                    <p><input type="text" placeholder="Full Name" class="form-control"></p>
+                    <label>User Name</label>    
+                    <p><input type="text" placeholder="Choose a User Name" class="form-control"></p>
+                    <label>Email Address</label>    
+                    <p><input type="text" placeholder="Plese Enter Your Email Address" class="form-control"></p>
+                    <label>Password</label>    
+                    <p><input type="text" placeholder="Password" class="form-control"></p>
+                    <label>Confirm Password</label>    
+                    <p><input type="text" placeholder="Confirm Password" class="form-control"></p>
+                    <button class="btn btn-primary col-sm-6 col-xs-6">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>
