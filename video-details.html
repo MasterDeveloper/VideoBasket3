@@ -260,11 +260,20 @@
 	                        <a href="#"><img class="img-dull" alt="" src="images/video-large.png"><i class="icon-play"></i></a>
                         </div>
                         <div class="like-wrap clearfix">
-                        	<div class="pull-left"><img src="images/fb-likes.png" alt="" /></div>
+                        	<div class="pull-left">
+								<div id="fb-root"></div>
+								<script>(function(d, s, id) {
+								  var js, fjs = d.getElementsByTagName(s)[0];
+								  if (d.getElementById(id)) return;
+								  js = d.createElement(s); js.id = id;
+								  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1427754394118810";
+								  fjs.parentNode.insertBefore(js, fjs);
+								}(document, 'script', 'facebook-jssdk'));</script>
+								<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+							</div>
                             <div class="pull-right">
-	                            <img src="images/addthis.png" alt="" />
                                 <!-- AddThis Button BEGIN -->
-                                <!-- <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                                <div class="addthis_toolbox addthis_default_style addthis_20x20_style">
                                     <a class="addthis_button_preferred_1"></a>
                                     <a class="addthis_button_preferred_2"></a>
                                     <a class="addthis_button_preferred_3"></a>
@@ -274,7 +283,7 @@
                                 </div>
 					            <script type="text/javascript"
 								src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-52662ae10bed79c6"></script>
-                                -->
+                                
                                 
 								<!-- AddThis Button END -->
                             </div>
@@ -532,7 +541,15 @@
                                 
                             </ul>
                         </div><!-- clearfix video-thumb-wrap -->
-                        <img src="images/comments-box.png" alt="" />
+                        <div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1427754394118810";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						<div class="fb-comments" data-href="http://www.facebook.com" data-numposts="5"></div>
 		            </div><!--contents -->
                     <div class="col-sm-4" id="sidebar">
                     	<div class="sidebar-section">
